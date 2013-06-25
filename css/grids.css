@@ -1,0 +1,143 @@
+/* 
+More Info:  http://developer.yahoo.com/yui/3/cssgrids/ 
+NOTE: You may use any of the predefined styles as defined by Yahoo.
+I have also provided a shorter and easier to use helper class for each
+style to help keep things simple. Everything is base 24 and omits "yui3-":
+.yui3-g : .g
+.yui3-u : .u
+.yui3-u-1-3 : .u-8-24
+.yui3-u-1-4 : .u-6-24
+*/
+
+.yui3-g,.g{letter-spacing:-0.31em !important;*letter-spacing:normal !important;word-spacing:-0.43em !important}
+.yui3-u,.u,.yui3-u-1,.u-1,.yui3-u-1-2,.u-12-24,.yui3-u-1-3,.u-8-24,.yui3-u-2-3,.u-16-24,.yui3-u-1-4,.u-6-24,.yui3-u-3-4,.u-18-24,.yui3-u-1-5,.u-1-5,.yui3-u-2-5,.u-2-5,.yui3-u-3-5,.u-3-5,.yui3-u-4-5,.u-4-5,.yui3-u-1-6,.u-4-24,.yui3-u-5-6,.u-20-24,.yui3-u-1-8,.u-3-24,.yui3-u-3-8,.u-9-24,.yui3-u-5-8,.u-15-24,.yui3-u-7-8,.u-21-24,.yui3-u-1-12,.u-2-24,.yui3-u-5-12,.u-10-24,.yui3-u-7-12,.u-14-24,.yui3-u-11-12,.u-22-24,.yui3-u-1-24,.u-1-24,.yui3-u-5-24,.u-5-24,.yui3-u-7-24,.u-7-24,.yui3-u-11-24,.u-11-24,.yui3-u-13-24,.u-13-24,.yui3-u-17-24,.u-17-24,.yui3-u-19-24,.u-19-24,.yui3-u-23-24,.u-23-24{display:block;zoom:1;*display:inline;letter-spacing:normal;word-spacing:normal;vertical-align:top}
+.yui3-u-1,.u-1{display:block}
+
+
+
+	/* grid styles should be on for non l-container contained elements */
+	.yui3-u,.u,
+	.yui3-u-1-2,.u-12-24,.yui3-u-1-3,.u-8-24,.yui3-u-2-3,.u-16-24,.yui3-u-1-4,.u-6-24,.yui3-u-3-4,.u-18-24,.yui3-u-1-5,.u-1-5,.yui3-u-2-5,.u-2-5,.yui3-u-3-5,.u-3-5,.yui3-u-4-5,.u-4-5,.yui3-u-1-6,.u-4-24,.yui3-u-5-6,.u-20-24,.yui3-u-1-8,.u-3-24,.yui3-u-3-8,.u-9-24,.yui3-u-5-8,.u-15-24,.yui3-u-7-8,.u-21-24,.yui3-u-1-12,.u-2-24,.yui3-u-5-12,.u-10-24,.yui3-u-7-12,.u-14-24,.yui3-u-11-12,.u-22-24,.yui3-u-1-24,.u-1-24,.yui3-u-5-24,.u-5-24,.yui3-u-7-24,.u-7-24,.yui3-u-11-24,.u-11-24,.yui3-u-13-24,.u-13-24,.yui3-u-17-24,.u-17-24,.yui3-u-19-24,.u-19-24,.yui3-u-23-24,.u-23-24{display:inline-block;}
+	.yui3-u-1-2,.u-12-24{width:50%}
+	.yui3-u-1-3,.u-8-24{width:33.33333%}
+	.yui3-u-2-3, .u-16-24{width:66.66666%}
+	.yui3-u-1-4,.u-6-24{width:25%}
+	.yui3-u-3-4,.u-18-24{width:75%}
+	.yui3-u-1-5,.u-1-5{width:20%}
+	.yui3-u-2-5,.u-2-5{width:40%}
+	.yui3-u-3-5,.u-3-5{width:60%}
+	.yui3-u-4-5,.u-4-5{width:80%}
+	.yui3-u-1-6,.u-4-24{width:16.656%}
+	.yui3-u-5-6,.u-20-24{width:83.33%}
+	.yui3-u-1-8,.u-3-24{width:12.5%}
+	.yui3-u-3-8,.u-9-24{width:37.5%}
+	.yui3-u-5-8,.u-15-24{width:62.5%}
+	.yui3-u-7-8,.u-21-24{width:87.5%}
+	.yui3-u-1-12,.u-2-24{width:8.3333%}
+	.yui3-u-5-12,.u-10-24{width:41.6666%}
+	.yui3-u-7-12,.u-14-24{width:58.3333%}
+	.yui3-u-11-12,.u-22-24{width:91.6666%}
+	.yui3-u-1-24,.u-1-24{width:4.1666%}
+	.yui3-u-5-24,.u-5-24{width:20.8333%}
+	.yui3-u-7-24,.u-7-24{width:28.5%}
+	.yui3-u-11-24,.u-11-24{width:45.8333%}
+	.yui3-u-13-24,.u-13-24{width:54.1666%}
+	.yui3-u-17-24,.u-17-24{width:70.8333%}
+	.yui3-u-19-24,.u-19-24{width:79.1666%}
+	.yui3-u-23-24,.u-23-24{width:95.8333%}
+	
+	/* grid styles should be off for l-container contained elements */
+	.u,
+	.l-container .u-12-24,
+	.l-container .u-8-24,
+	.l-container .u-16-24,
+	.l-container .u-6-24,
+	.l-container .u-18-24,
+	.l-container .u-1-5,
+	.l-container .u-2-5,
+	.l-container .u-3-5,
+	.l-container .u-4-5,
+	.l-container .u-4-24,
+	.l-container .u-20-24,
+	.l-container .u-3-24,
+	.l-container .u-9-24,
+	.l-container .u-15-24,
+	.l-container .u-21-24,
+	.l-container .u-2-24,
+	.l-container .u-10-24,
+	.l-container .u-14-24,
+	.l-container .u-22-24,
+	.l-container .u-1-24,
+	.l-container .u-5-24,
+	.l-container .u-7-24,
+	.l-container .u-11-24,
+	.l-container .u-13-24,
+	.l-container .u-17-24,
+	.l-container .u-19-24,
+	.l-container .u-23-24{ display:block; width: auto;}
+	
+/*# Media Queries/2: 768px  #*/
+/* NOTE: Grid styles kick in at 768 px */
+@media only screen and (min-width: 768px) {
+	.yui3-u,.u,
+	/*.yui3-u-1,.u-1,*/
+	.u-12-24,
+	.u-8-24,.yui3-u-2-3,.u-16-24,.yui3-u-1-4,.u-6-24,.yui3-u-3-4,.u-18-24,.yui3-u-1-5,.u-1-5,.yui3-u-2-5,.u-2-5,.yui3-u-3-5,.u-3-5,.yui3-u-4-5,.u-4-5,.yui3-u-1-6,.u-4-24,.yui3-u-5-6,.u-20-24,.yui3-u-1-8,.u-3-24,.yui3-u-3-8,.u-9-24,.yui3-u-5-8,.u-15-24,.yui3-u-7-8,.u-21-24,.yui3-u-1-12,.u-2-24,.yui3-u-5-12,.u-10-24,.yui3-u-7-12,.u-14-24,.yui3-u-11-12,.u-22-24,.yui3-u-1-24,.u-1-24,.yui3-u-5-24,.u-5-24,.yui3-u-7-24,.u-7-24,.yui3-u-11-24,.u-11-24,.yui3-u-13-24,.u-13-24,.yui3-u-17-24,.u-17-24,.yui3-u-19-24,.u-19-24,.yui3-u-23-24,.u-23-24{display:inline-block;}
+	
+	.u,
+	.l-container .u-12-24,
+	.l-container .u-8-24,
+	.l-container .u-16-24,
+	.l-container .u-6-24,
+	.l-container .u-18-24,
+	.l-container .u-1-5,
+	.l-container .u-2-5,
+	.l-container .u-3-5,
+	.l-container .u-4-5,
+	.l-container .u-4-24,
+	.l-container .u-20-24,
+	.l-container .u-3-24,
+	.l-container .u-9-24,
+	.l-container .u-15-24,
+	.l-container .u-21-24,
+	.l-container .u-2-24,
+	.l-container .u-10-24,
+	.l-container .u-14-24,
+	.l-container .u-22-24,
+	.l-container .u-1-24,
+	.l-container .u-5-24,
+	.l-container .u-7-24,
+	.l-container .u-11-24,
+	.l-container .u-13-24,
+	.l-container .u-17-24,
+	.l-container .u-19-24,
+	.l-container .u-23-24{ display:inline-block; width: auto;}
+	
+	.yui3-u-1-2,.l-container .u-12-24{width:50%}
+	.yui3-u-1-3,.l-container .u-8-24{width:33.33333%}
+	.yui3-u-2-3,.l-container .u-16-24{width:66.66666%}
+	.yui3-u-1-4,.l-container .u-6-24{width:25%}
+	.yui3-u-3-4,.l-container .u-18-24{width:75%}
+	.yui3-u-1-5,.l-container .u-1-5{width:20%}
+	.yui3-u-2-5,.l-container .u-2-5{width:40%}
+	.yui3-u-3-5,.l-container .u-3-5{width:60%}
+	.yui3-u-4-5,.l-container .u-4-5{width:80%}
+	.yui3-u-1-6,.l-container .u-4-24{width:16.656%}
+	.yui3-u-5-6,.l-container .u-20-24{width:83.33%}
+	.yui3-u-1-8,.l-container .u-3-24{width:12.5%}
+	.yui3-u-3-8,.l-container .u-9-24{width:37.5%}
+	.yui3-u-5-8,.l-container .u-15-24{width:62.5%}
+	.yui3-u-7-8,.l-container .u-21-24{width:87.5%}
+	.yui3-u-1-12,.l-container .u-2-24{width:8.3333%}
+	.yui3-u-5-12,.l-container .u-10-24{width:41.6666%}
+	.yui3-u-7-12,.l-container .u-14-24{width:58.3333%}
+	.yui3-u-11-12,.l-container .u-22-24{width:91.6666%}
+	.yui3-u-1-24,.l-container .u-1-24{width:4.1666%}
+	.yui3-u-5-24,.l-container .u-5-24{width:20.8333%}
+	.yui3-u-7-24,.l-container .u-7-24{width:28.5%}
+	.yui3-u-11-24,.l-container .u-11-24{width:45.8333%}
+	.yui3-u-13-24,.l-container .u-13-24{width:54.1666%}
+	.yui3-u-17-24,.l-container .u-17-24{width:70.8333%}
+	.yui3-u-19-24,.l-container .u-19-24{width:79.1666%}
+	.yui3-u-23-24,.l-container .u-23-24{width:95.8333%}
+}

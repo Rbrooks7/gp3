@@ -1,0 +1,29 @@
+/* Media Query stop points based on 16px default browser font size */
+/* Container widths based on 13px #l-wrapper font-size as set in core.css */
+
+.l-container {
+	margin: 0 auto;
+	min-width: 300px; /* Keep in px */
+    width:100%;
+}
+
+/*# Media Queries/1: 480px  #*/
+@media only screen and (min-width: 480px) {
+	.l-container {
+		width: 480px; /*   480 / 13   */
+	}
+}
+
+/*# Media Queries/2: 768px  #*/
+@media only screen and (min-width: 768px) {
+	.l-container {
+		width: 768px;  /*   768 / 13   */
+	}
+}
+
+/*# Media Queries/3: 960px #*/
+@media only screen and (min-width: 960px) {
+	.l-container {
+		width: 960px;  /*   960 / 13   */
+	}
+}
