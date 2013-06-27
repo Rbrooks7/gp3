@@ -22,13 +22,27 @@
     <link type="text/css" rel="stylesheet" href="http://yourgreenpal.com/script/lib/fancybox/jquery.fancybox.css" />
     <link type="text/css" rel="stylesheet" href="http://yourgreenpal.com/style/container.css" />
     <link type="text/css" rel="stylesheet" href="http://yourgreenpal.com/style/grids.css" />
+         
+ <!--ross styles -->
+  <link rel="stylesheet" href="css/g=coreCSS.css" /> 
+  <link rel="stylesheet" href="css/g=libCSS.css" /> 
+         
+<!-- original style sheets below-->
           <!-- Library styles -->
-      <link type="text/css" rel="stylesheet" href="http://yourgreenpal.com/lib/min/g=libCSS" />
+      <link type="text/css" rel="stylesheet" href="http://yourgreenpal.com/lib/min/g=libCSS" />  
       <!-- Site styles -->
       <link type="text/css" rel="stylesheet" href="http://yourgreenpal.com/lib/min/g=coreCSS" />
 
+<<<<<<< HEAD
       <!--Ross Style Sheet -->
       <link rel="stylesheet" href="css/style.css" />
+=======
+ 
+<!-- ross scripts not correct
+
+  <script src="g=coreJS.js"></script>
+  <script src="g=libJS.js"></script> -->
+>>>>>>> 62e9c6c3594bc853a37d733321db8803a06e15bd
         
     <!--[if IE 9]>
     <link type='text/css' rel='stylesheet' href='http://yourgreenpal.com/style/ie9.css' media='all' />
@@ -57,10 +71,10 @@
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=visualization&sensor=false"></script>
     <!-- <script type="text/javascript" src="https://js.stripe.com/v1/"></script> -->
     
-          <!-- jQuery libraries -->    
-      <script type="text/javascript" src="http://yourgreenpal.com/lib/min/g=libJS"></script>
+          <!-- jQuery libraries -->
+      <script type="text/javascript" src="http://yourgreenpal.com/lib/min/g=libJS"></script> 
       <!-- App core -->
-      <script type="text/javascript" src="http://yourgreenpal.com/lib/min/g=coreJS"></script>
+      <script type="text/javascript" src="http://yourgreenpal.com/lib/min/g=coreJS"></script> 
       
     
 <!--		 
@@ -106,8 +120,8 @@
                       
             <ul id="nav" >
 	  <li><a href="http://yourgreenpal.com">home</a></li>
-  <li><a href="http://yourgreenpal.com/about">about</a></li>
-  <li><a href="http://yourgreenpal.com/features">features</a></li>
+  <li><a href="http://yourgreenpal.com/about">faq</a></li>
+  <li><a href="http://yourgreenpal.com/features">how it works</a></li>
   <li><a href="http://yourgreenpal.com/contact">contact</a></li>
   
   
@@ -137,12 +151,13 @@
         <ul id="sliderUl">
           <li id="slide1" class="slide">
             <div class="content">
+              <h1 class="bctag">We Bring the Local Lawn Mowing Pros to You!</h1>
                 <!-- http://player.vimeo.com/video/42578055 -->
                 <div id="slide2video" class="video-wrap">
 					<div id="#vimeo-wrap" style="display:none;">
 						<iframe src="http://player.vimeo.com/video/50691452?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
-					<div class="img-wrap">
+					<div class="img-wrap"> 
 						<img src="http://yourgreenpal.com/images/home-slider-vimeo-teaser.png" alt="" class="teaser" />
 					</div>
 					<div class="btns">
@@ -157,10 +172,11 @@
                 <img src="http://yourgreenpal.com/images/bee1.png" id="bee3"/>
                 <img src="http://yourgreenpal.com/images/dandelions.png" class="dandelion" id="slide2dand1"/>
                 <div id="slide2Text" class="slideText">
-                  <p class="whiteLarge">How it works-</p>
-                  <p class="whiteLarge">watch the video</p>
+                 <!-- <p class="whiteLarge">We bring the local lawn</p>
+                  <p class="whiteLarge">mowing pros to you!</p> -->
                 </div>
                 <div id="slide2Buttons">
+<<<<<<< HEAD
                   <input type="text" name="ServiceDate" id="new_ServiceDate" alt='Service Date' class="datepicker watermark" />
                   <br />
                   <input type="text" name="Address" id="new_Address" alt='Street Address' class='watermark' />
@@ -174,6 +190,24 @@
                   
                   <!-- <a href="#" class="button"><strong>Download</strong> the App</a> 
                   removed the dowland button on slide 1-->
+=======
+
+                  <form id="newSched_form" action="http://yourgreenpal.com/customer/register" method="GET">
+            <input type="hidden" name="action" value="quickSchedule" />
+            <input type="text" name="ServiceDate" id="new_ServiceDate" alt='Service Date' class="datepicker watermark" />
+            <!-- Comma separated address -->
+            <br />
+            <input type="text" name="Address" id="new_Address" alt='Street Address' class='watermark' />
+            <br />
+            <input type="text" name="Zip" id="new_zip" alt='Zip Code' class='watermark' />
+            <br />
+            <input type="submit" name="newSched" value="Schedule Now" class="button grnBtn"/>
+          </form>
+
+                <!-- <a href="http://yourgreenpal.com/customer/register" class="button grnBtn"><strong>Schedule</strong> Now</a>
+                  <br /> removed  big "Schedule Now button" from slide 1 -->
+                  <!-- <a href="#" class="button"><strong>Download</strong> the App</a>  removed "download app" btn on home page -->
+>>>>>>> 62e9c6c3594bc853a37d733321db8803a06e15bd
                 </div>
             </div>
           </li>
