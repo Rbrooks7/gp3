@@ -1010,6 +1010,12 @@ img.dandelion{bottom:0px;left:700px;opacity:.25}#bee1{-moz-transform:rotate(45de
 * = Ross' delta
 *****************
 */
+#logoHolder p {
+	color: rgb(255,255,255);
+	padding-top: 19px;
+	padding-left: 122px;
+}
+
 .bctag {
     padding-top: 35px;
 
